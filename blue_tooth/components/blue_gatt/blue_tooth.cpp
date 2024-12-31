@@ -53,7 +53,7 @@ void blue_tooth::gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_
                 .channel_map = ADV_CHNL_ALL,
                 .adv_filter_policy = ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY,
             };
-            esp_ble_gap_start_advertising(&adv_params);
+            esp_ble_gap_start_advertising(&adv_params); //启动广播
         }
         break;
     case ESP_GAP_BLE_ADV_START_COMPLETE_EVT:
