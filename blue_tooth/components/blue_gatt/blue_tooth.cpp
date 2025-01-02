@@ -40,7 +40,6 @@ void blue_tooth::gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_
 
     switch (event)
     {
-
     case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT:
         adv_config_done &= (~adv_config_flag);
         if (adv_config_done == 0)
